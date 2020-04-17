@@ -208,6 +208,10 @@ body {
     padding: 0 .3em;
 }
 
+.card__role-wrap {
+    text-align: center;
+}
+
 .card__role {
     height: 100%;
 }
