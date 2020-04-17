@@ -1,0 +1,61 @@
+input {
+    display: none;
+}
+
+.tabs-block {
+    margin-top: 30px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.tab:nth-child(even) {
+    color: #f00;
+}
+
+.tab:hover {
+    text-shadow: 1px 1px 3px #000;
+}
+
+.tab +.tab {
+    margin-left: 2em;
+}
+
+.tab__symbol {
+    font-size: 5rem;
+    vertical-align: middle;
+}
+
+.tab__title {
+    text-transform: capitalize;
+    font-size: 3rem;
+    display: inline-block;
+    padding: .15em;
+}
+
+input[id="spade"]:checked ~ .tabs .tab--1 .tab__title,
+input[id="diamond"]:checked ~ .tabs .tab--2 .tab__title,
+input[id="club"]:checked ~ .tabs .tab--3 .tab__title,
+input[id="heart"]:checked ~ .tabs .tab--4 .tab__title {
+   border-bottom: 3px dashed;
+   transition: all .3s ease-in;
+}
+
+.row {
+    margin-top: 2em;
+    display: none;
+}
+
+input[id="spade"]:checked ~ .tabs-body .row--spade,
+input[id="diamond"]:checked ~ .tabs-body .row--diamond,
+input[id="club"]:checked ~ .tabs-body .row--club, 
+input[id="heart"]:checked ~ .tabs-body .row--heart {
+    display: block;
+}

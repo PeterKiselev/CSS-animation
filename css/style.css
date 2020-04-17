@@ -1,0 +1,213 @@
+@import "tubs.css";
+@import "position.css";
+@import "animate.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px;
+    position: relative;
+    font-family: "Lucida Console", monospace;
+    font-size: 2.5rem;
+    font-weight: 500;
+    overflow: hidden;
+} 
+
+ body:before {
+    content: "";
+    background: url(../img/bg-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+} 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col {
+    width: 100%;
+}
+
+.col--1-7{
+    max-width: 170px;
+}
+
+.scene {
+    perspective: 1000px;
+}
+
+.scene:hover .card {
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 49px 0px rgba(20, 20, 21, 0.11);
+}
+
+.card {
+    width: 100%;
+    padding-top: 150%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 2px 0px rgba(20, 20, 21, .6);
+    transition: all .7s ease-in;
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.card__image-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.card__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 7px;
+}
+
+.card__face--front {
+    background-image: url(../img/bg-front.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg);
+    padding: .6em;
+    border-radius: 7px;
+}
+
+.card__face--front:before, .card__face--front:after {
+    content: attr(value);
+    position: absolute;
+}
+
+.card__face--front:before {
+    top: 13px;
+    left: 16px;
+}
+
+.card__face--front:after {
+    bottom: 11px;
+    right: 11px;
+}
+
+.card__face--front-black {
+    color: #000;
+}
+
+.card__face--front-red {
+    color: #f00;
+}
+
+.card__face--front:after, .card__content:after {
+    transform: rotate(180deg);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;  
+    font-size: 4rem; 
+}
+
+.card__content:before, .card__content:after {
+    position: absolute;
+    font-size: 2.5rem;
+}
+
+.card__content:before {
+    position: absolute;
+    top: 33px;
+    left: 16px;
+}
+
+.card__content:after {
+    bottom: 30px;
+    right: 11px;
+}
+
+.card__content--spade:before, .card__content--spade:after {
+    content: '♠';
+}
+
+.card__content--diamond:before, .card__content--diamond:after {
+    content: '♦';
+}
+
+.card__content--club:before, .card__content--club:after {
+    content: '♣';
+}
+
+.card__content--heart:before, .card__content--heart:after {
+    content: '♥';
+}
+
+.card__suits {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.card__suit {
+    height: 30px;
+    line-height: 30px;
+}
+
+.card__suit--turn {
+    transform: rotate(180deg);
+}
+
+.card__face--front[value="A"] .card__suit {
+    font-size: 8rem;
+}
+
+.card__face--front[value="2"] .card__suit, 
+.card__face--front[value="3"] .card__suit, 
+.card__face--front[value="4"] .card__suit, 
+.card__face--front[value="5"] .card__suit {
+    font-size: 4.75rem;
+}
+
+.card__face--front[value="6"] .card__suit,
+.card__face--front[value="7"] .card__suit {
+    font-size: 4.5rem;
+}
+
+.card__face--front[value="Q"] .card__role-wrap  { /*а то какая-то дама толстая)))*/
+    padding: 0 .3em;
+}
+
+.card__role {
+    height: 100%;
+}

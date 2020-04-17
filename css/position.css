@@ -1,0 +1,79 @@
+.row {
+    position: relative;
+    width: 100%;
+}
+
+.col {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.col:nth-child(2) {
+    left: 85px;
+}
+
+.col:nth-child(3) {
+    left: 170px;
+}
+
+.col:nth-child(4) {
+    left: 255px;
+}
+
+.col:nth-child(5) {
+    left: 340px;
+}
+
+.col:nth-child(6) {
+    left: 425px;
+}
+
+.col:nth-child(7) {
+    left: 510px;
+}
+
+.col:nth-child(8) {
+    left: 595px;
+}
+
+.col:nth-child(9) {
+    left: 680px;
+}
+
+.col:nth-child(10) {
+    left: 765px;
+}
+
+.col:nth-child(11) {
+    left: 850px;
+}
+
+.col:nth-child(12) {
+    left: 935px;
+}
+
+.col:nth-child(13) {
+    left: 1020px;
+}
+
+/* смещение всех блоков справа от того, на которого навели */
+.col:first-child:hover ~ :not(:first-child),
+.col:nth-child(2):hover ~ :nth-child(n + 2),
+.col:nth-child(3):hover ~ :nth-child(n + 3),
+.col:nth-child(4):hover ~ :nth-child(n + 4),
+.col:nth-child(5):hover ~ :nth-child(n + 5),
+.col:nth-child(6):hover ~ :nth-child(n + 6),
+.col:nth-child(7):hover ~ :nth-child(n + 7),
+.col:nth-child(8):hover ~ :nth-child(n + 8),
+.col:nth-child(9):hover ~ :nth-child(n + 9),
+.col:nth-child(10):hover ~ :nth-child(n + 10),
+.col:nth-child(11):hover ~ :nth-child(n + 11),
+.col:nth-child(12):hover + :last-child { 
+    transform: translateX(85px);
+}
+
+.col:hover .card__face--front {
+    box-shadow: 0 0 7px 2px rgba(31, 0, 0, 0.7);
+}

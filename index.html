@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS animation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs-block">
+            <input type="radio" name="tab" id="spade" checked>
+            <input type="radio" name="tab" id="diamond">
+            <input type="radio" name="tab" id="club">
+            <input type="radio" name="tab" id="heart">
+            <nav class="tabs">
+                <label class="tab tab--1" for="spade">
+                    <span class="tab__symbol">&#9824;</span>
+                    <span class="tab__title">Spade</span>
+                </label>
+                <label class="tab tab--2" for="diamond">
+                    <span class="tab__symbol">&#9830;</span>
+                    <span class="tab__title">Diamond</span>
+                </label>
+                <label class="tab tab--3" for="club">
+                    <span class="tab__symbol">&#9827;</span>
+                    <span class="tab__title">Club</span>
+                </label>
+                <label class="tab tab--4" for="heart">
+                    <span class="tab__symbol">&#9829;</span>
+                    <span class="tab__title">Heart</span>
+                </label>
+            </nav>
+            <div class="tabs-body">
+                <!-- spade -->
+                <div class="row row--spade animated fadeInLeftBig">
+                    <!-- A -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="A">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="2">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="3">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="4">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="5">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="6">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="7">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="8">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="9">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="10">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                            <div class="card__suit card__suit--turn">&#9824;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                            <div class="card__suit card__suit--turn">&#9824;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jack -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front" value="J">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/jack.png" alt="валет">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- qeen -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front" value="Q">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__role-wrap  card__role-wrap--qeen">
+                                            <img class="card__role" src="img/qeen.png" alt="дама">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- king -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front" value="K">
+                                    <div class="card__content card__content--spade" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/king.png" alt="король">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- diamond -->
+                <div class="row row--diamond animated fadeInRightBig">
+                    <!-- A -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="A">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="2">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="3">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="4">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="5">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="6">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="7">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="8">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="9">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="10">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                            <div class="card__suit card__suit--turn">&#9830;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                            <div class="card__suit card__suit--turn">&#9830;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jack -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="J">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/jack.png" alt="валет">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- qeen -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="Q">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__role-wrap  card__role-wrap--qeen">
+                                            <img class="card__role" src="img/qeen.png" alt="дама">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- king -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="K">
+                                    <div class="card__content card__content--diamond" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/king.png" alt="король">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- club -->
+                <div class="row row--club animated fadeInLeftBig">
+                    <!-- A -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="A">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="2">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="3">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="4">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="5">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="6">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="7">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="8">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="9">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="10">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                            <div class="card__suit card__suit--turn">&#9827;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                            <div class="card__suit card__suit--turn">&#9827;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jack -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="J">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/jack.png" alt="валет">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- qeen -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="Q">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__role-wrap  card__role-wrap--qeen">
+                                            <img class="card__role" src="img/qeen.png" alt="дама">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- king -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-black" value="K">
+                                    <div class="card__content card__content--club" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/king.png" alt="король">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- diamond -->
+                <div class="row row--heart animated fadeInRightBig">
+                    <!-- A -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="A">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="2">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="3">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="4">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="5">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="6">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="7">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="8">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="9">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="10">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                            <div class="card__suit card__suit--turn">&#9829;</div> 
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                        <div class="card__suits">
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                            <div class="card__suit card__suit--turn">&#9829;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jack -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="J">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/jack.png" alt="валет">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- qeen -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="Q">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__role-wrap  card__role-wrap--qeen">
+                                            <img class="card__role" src="img/qeen.png" alt="дама">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- king -->
+                    <div class="col col--1-7">
+                        <div class="scene">
+                            <div class="card">
+                                <div class="card__face card__face--back">
+                                    <div class="card__image-wrap">
+                                        <img class="card__image" src="img/card_reverse_mafia.jpg" alt="рубашка карты Mafia">
+                                    </div>
+                                </div>
+                                <div class="card__face card__face--front card__face--front-red" value="K">
+                                    <div class="card__content card__content--heart" >
+                                        <div class="card__role-wrap">
+                                            <img class="card__role" src="img/king.png" alt="король">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
