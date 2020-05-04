@@ -1,6 +1,6 @@
 @import "tubs.css";
 @import "position.css";
-/* @import "animate.css"; */
+@import "animate.css";
 
 * {
     box-sizing: border-box;
