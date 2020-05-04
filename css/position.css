@@ -11,51 +11,63 @@
 }
 
 .col:nth-child(2) {
-    left: 85px;
+    left: 6.7%;
+    /* left: 85px; */
 }
 
 .col:nth-child(3) {
-    left: 170px;
+    left: 13.4%;
+    /* left: 170px; */
 }
 
 .col:nth-child(4) {
-    left: 255px;
+    left: 20.1%;
+    /* left: 255px; */
 }
 
 .col:nth-child(5) {
-    left: 340px;
+    left: 26.8%;
+    /* left: 340px; */
 }
 
 .col:nth-child(6) {
-    left: 425px;
+    left: 33.5%;
+    /* left: 425px; */
 }
 
 .col:nth-child(7) {
-    left: 510px;
+    left: 40.2%;
+    /* left: 510px; */
 }
 
 .col:nth-child(8) {
-    left: 595px;
+    left: 46.9%;
+    /* left: 595px; */
 }
 
 .col:nth-child(9) {
-    left: 680px;
+    left: 53.6%;
+    /* left: 680px; */
 }
 
 .col:nth-child(10) {
-    left: 765px;
+    left: 60.3%;
+    /* left: 765px; */
 }
 
 .col:nth-child(11) {
-    left: 850px;
+    left: 67%;
+    /* left: 850px; */
 }
 
 .col:nth-child(12) {
-    left: 935px;
+    left: 73.7%;
+    /* left: 935px; */
 }
 
 .col:nth-child(13) {
-    left: 1020px;
+    left: 80.4%;
+    /* left: 1020px; */
 }
 
 /* смещение всех блоков справа от того, на которого навели */
@@ -71,7 +83,8 @@
 .col:nth-child(10):hover ~ :nth-child(n + 10),
 .col:nth-child(11):hover ~ :nth-child(n + 11),
 .col:nth-child(12):hover + :last-child { 
-    transform: translateX(85px);
+    /* transform: translateX(85px); */
+    transform: translateX(50%);
 }
 
 .col:hover .card__face--front {

@@ -1,6 +1,6 @@
 @import "tubs.css";
 @import "position.css";
-@import "animate.css";
+/* @import "animate.css"; */
 
 * {
     box-sizing: border-box;
@@ -9,6 +9,22 @@
 html {
     min-height: 100%;
     font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 3px;
+    }
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 2px;
+    }
 }
 
 img {
@@ -21,7 +37,7 @@ body {
     padding: 30px;
     position: relative;
     font-family: "Lucida Console", monospace;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 500;
     overflow: hidden;
 } 
@@ -49,8 +65,9 @@ body {
     width: 100%;
 }
 
-.col--1-7{
-    max-width: 170px;
+.col--1-7 {
+    max-width: 14%;
+    /* max-width: 170px; */
 }
 
 .scene {
@@ -81,7 +98,14 @@ body {
     z-index: 1;
 }
 
-.card__image-wrap {
+.card__face--back {
+    background-image: url(../img/card_reverse_mafia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .card__image-wrap {
     width: 100%;
     height: 100%;
 }
@@ -94,12 +118,13 @@ body {
     min-width: 100%;
     min-height: 100%;
     border-radius: 7px;
-}
+} */
 
 .card__face--front {
     background-image: url(../img/bg-front.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     transform: rotateY(180deg);
     padding: .6em;
     border-radius: 7px;
@@ -111,13 +136,13 @@ body {
 }
 
 .card__face--front:before {
-    top: 13px;
-    left: 16px;
+    top: 5%;
+    left: 9%;
 }
 
 .card__face--front:after {
-    bottom: 11px;
-    right: 11px;
+    bottom: 4%;
+    right: 9%;
 }
 
 .card__face--front-black {
@@ -133,6 +158,7 @@ body {
 }
 
 .card__content {
+    padding: .2em;
     width: 100%;
     height: 100%;
     display: flex;
@@ -147,13 +173,13 @@ body {
 
 .card__content:before {
     position: absolute;
-    top: 33px;
-    left: 16px;
+    top: 14%;
+    left: 9%;
 }
 
 .card__content:after {
-    bottom: 30px;
-    right: 11px;
+    bottom: 13%;
+    right: 9%;
 }
 
 .card__content--spade:before, .card__content--spade:after {
@@ -184,12 +210,38 @@ body {
     line-height: 30px;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .card__suit {
+        height: 20px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .card__suit {
+        height: 3px;
+        line-height: 3px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .card__suit {
+        height: 2px;
+        line-height: 2px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .card__suit {
+        height: 1px;
+        line-height: 1px;
+    }
+}
+
 .card__suit--turn {
     transform: rotate(180deg);
 }
 
 .card__face--front[value="A"] .card__suit {
-    font-size: 8rem;
+    font-size: 7.5rem;
 }
 
 .card__face--front[value="2"] .card__suit, 
